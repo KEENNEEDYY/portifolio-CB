@@ -23,7 +23,7 @@ export default function Home() {
               <Image src={ProfilePic} alt="KennedyLeocadio" className='w-full h-auto' />
             </div>
             <div className='w-1/2 flex flex-col items-center self-center'>
-              <AnimatedText text="Transformando a visão em realidade com código e design." className='!text-4xl !text-left'/>
+              <AnimatedText text={`Transformando a visão em realidade com código e design.`} className='!text-4xl !text-left'/>
               <p className='my-4 text-base font-medium' >
                 Como um habilidoso desenvolvedor full-stack, dedico-me a transformar ideias em aplicações web inovadoras.
                 Explore meus projetos e artigos mais recentes, mostrando minha experiência em React.js e desenvolvimento web.
