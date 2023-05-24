@@ -17,17 +17,17 @@ const quote = {
 
 const singleWord = {
     initial: {
-        opacity: 0,
-        y: 50,
+      opacity: 0,
+      y: 50,
     },
     animate: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            delay: 1,
-        },
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 1,
+      },
     },
-};
+  };
 
 const AnimatedText = ({text, className=" "}) => {
   return (
@@ -37,17 +37,16 @@ const AnimatedText = ({text, className=" "}) => {
        initial="initial"
        animate="animate"
       >
-          {
-              text.split(` `).map((word, index) => 
-              <motion.span className="inline-block"
-               key={word + ` - ` + index} 
-               variants={singleWord}
-               transition={{delay: 0.5 + index*0.08 }}
-              >
-                  {word}&nbsp;
-              </motion.span>
-              )
-          }
+          {text.split(` `).map((word, index) => (
+          <motion.span
+            className="inline-block"
+            key={word + ` - ` + index}
+            variants={singleWord} 
+            transition={{ delay: 0.5 + index * 0.08 }}
+          >
+            {word}&nbsp;
+          </motion.span>
+        ))}
       </motion.h1>
     </div>
   )
