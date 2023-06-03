@@ -11,6 +11,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes:{
+        spinRotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(-180deg)' },
+          '100%': { transform: 'rotate(-360deg)' },
+        },
+      },
       fontFamily: {
         mont: ['var(--font-mont)', ...fontFamily.sans],
       },
@@ -22,6 +29,7 @@ module.exports = {
       },
       animation: {
         'spin-slow': 'spin 8s linear infinite',
+        'reverse-rotate': 'spinRotate 8s linear infinite',
       },
       backgroundImage: {
         circularLight: 'repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px, #f5f5f5 100px)',
