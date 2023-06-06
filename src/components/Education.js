@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { useScroll,motion } from 'framer-motion';
 import LiIcon from './LiIcon';
 
-const Details = ({ type, time, place, info}) => {
+const Details = ({ type, time, place, moreInfo, info}) => {
     const ref = useRef(null);
     return (
         <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between' >
@@ -12,7 +12,7 @@ const Details = ({ type, time, place, info}) => {
                 {type}
             </h3>
             <span className='capitalize font-medium text-dark/75' >
-                {time} | {place}
+                {time} | {place} | {moreInfo}
             </span>
             <p className='font-medium w-full' >
                 {info}
@@ -38,7 +38,7 @@ const Education = () => {
     <motion.div className='my-64'>
 
         <h2 className='font-bold text-8xl mb-32 w-full text-center' >
-            Education
+            Formação
         </h2>
         
         <div ref={ref} className="w-[75%] mx-auto relative">
@@ -54,30 +54,30 @@ const Education = () => {
                 </ul> 
                 <ul className="w-full flex flex-col items-start justify-between ml-4" >
                     <Details 
-                        type={"Bacharel em Sistemas De Informação"}
-                        time={"08/07/2022"}
-                        place={"UNIVERSIDADE ESTÁCIO DE SÁ"}
-                        info={"Estruturas de Dados e Algoritmos, Engenharia de Sistemas de Computação e Inteligência Artificial"}
+                        type={"Técnico em telecomunicações"}
+                        time={"31/12/2021"}
+                        place={"Mônaco"}
+                        info={"Tecnologias de transmisão, telecomunicações, telefonia, TV, infra-estruturas"}
                     />
                 </ul> 
                 <ul className="w-full flex flex-col items-start justify-between ml-4" >
                     <Details 
-                        type={"Bacharel em Sistemas De Informação"}
-                        time={"08/07/2022"}
-                        place={"UNIVERSIDADE ESTÁCIO DE SÁ"}
-                        info={"Estruturas de Dados e Algoritmos, Engenharia de Sistemas de Computação e Inteligência Artificial"}
+                        type={"Técnico em redes de computadores"}
+                        time={"31/12/2019"}
+                        place={"SENAC"}
+                        info={"Configuração e instalação de redes LAN, MAN, WAN. Modelo OSI, DHCP, VLAN e tecnologias de roteamento"}
                     />
                 </ul> 
                 <ul className="w-full flex flex-col items-start justify-between ml-4" >
                     <Details 
-                        type={"Bacharel em Sistemas De Informação"}
-                        time={"08/07/2022"}
-                        place={"UNIVERSIDADE ESTÁCIO DE SÁ"}
-                        info={"Estruturas de Dados e Algoritmos, Engenharia de Sistemas de Computação e Inteligência Artificial"}
+                        type={"Engenharia de Computação"}
+                        time={"30/02/2017"}
+                        place={"Universidade Federal de Ouro Preto"}
+                        moreInfo={"Trancado"}
+                        info={"Cursado 2 anos no campus ICEA enquanto estive na cidade de João Monlevade. Algorítimos e estruturas de dados, arquitetura e engenharia de computação, sistemas embarcados."}
                     />
                 </ul>  
         </div>
-
     </motion.div>
   )
 }

@@ -14,24 +14,24 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
     const ref = useRef(null);
     return (
         <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[70%] mx-auto flex flex-col items-left justify-between' >
-        <LiIcon reference={ref} />
-        <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}} >
-            <h3 className='capitalize font-bold text-2xl' >
-                {position}&nbsp;<Link href={`${companyLink}`} 
-                target="_blank"
-                className='text-primary capitalize'
-                >
-                    @{company}
-                </Link>
-            </h3>
-            <span className='capitalize font-medium text-dark/75' >
-                {time} | {address}
-            </span>
-                <p className='font-medium w-full hover:underline' onClick={handleClick} style={{ cursor: 'pointer'}}>
-                    {workText}
-                </p> 
-        </motion.div>
-    </li>
+            <LiIcon reference={ref} />
+            <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}} >
+                <h3 className='capitalize font-bold text-2xl' >
+                    {position}&nbsp;<Link href={`${companyLink}`} 
+                    target="_blank"
+                    className='text-primary capitalize'
+                    >
+                        @{company}
+                    </Link>
+                </h3>
+                <span className='capitalize font-medium text-dark/75' >
+                    {time} | {address}
+                </span>
+                    <p className='font-medium w-full hover:underline' onClick={handleClick} style={{ cursor: 'pointer'}}>
+                        {workText}
+                    </p> 
+            </motion.div>
+        </li>
     );  
 };
 
@@ -50,21 +50,21 @@ const Experience = () => {
     <motion.div className='my-64'>
 
         <h2 className='font-bold text-8xl mb-32 w-full text-center' >
-            Experience
+            Experiência
         </h2>
         
         <div ref={ref} className="w-[75%] mx-auto relative">
 
                 <motion.div style={{scaleY: scrollYProgress }} className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top" /> 
                 <ul className="w-full flex flex-col items-start justify-between ml-4 mb-1" >
-                <Details 
-                        position={"Analista de Redes Pleno"}
-                        company={"VALENET"}
-                        companyLink={"www.valenet.com.br"}
-                        time={"out/2021 - atual"}
-                        address={"Itabira - MG"}
-                        work={"Como analista de redes pleno, tenho uma sólida experiência em diversas áreas, incluindo o trabalho com sistemas de monitoramento, como Solar Winds, Zabbix, Grafana e Cacti. Fui responsável por configurar parâmetros essenciais, como SNMP, OID e ICMP, e por desenhar topologias para monitorar ativos de rede. Tenho habilidades sólidas em OSI/TCP IP, o que me permite identificar e solucionar incidentes de rede, aplicando soluções iniciais nas camadas física, de enlace e de rede. Na camada de enlace, possuo experiência em configurar e resolver problemas, incluindo loops de rede, gerenciamento de equipamentos com VLANs e configuração de MPLS. Tenho conhecimento em identificar interfaces, como SFP e QSFP, e em entender diferentes codificações ópticas, como multimode, singlemode, bidirecional e unidirecional. Além disso, sou capaz de analisar o sinal de equipamentos de fibra ou rádio. Tenho vivência em configurar e estruturar sistemas de telefonia fixa comutada, monitorando e analisando troncos de telefonia. Também configurei equipamentos TDM e bundle para entrega de troncos de telefonia até uma gateway. Na camada de rede, tenho experiência em DHCP, roteamento estático, OSPF, MPLS, PPPoE, NAT e firewall no Mikrotik e no Linux, utilizando IPtables. Além disso, possuo conhecimento em PABX Elastic e Isabel, o que adiciona mais habilidades ao meu perfil como analista de redes."}                
-                    />
+                    <Details 
+                            position={"Analista de Redes Pleno"}
+                            company={"VALENET"}
+                            companyLink={"www.valenet.com.br"}
+                            time={"out/2021 - atual"}
+                            address={"Itabira - MG"}
+                            work={"Como analista de redes pleno, tenho uma sólida experiência em diversas áreas, incluindo o trabalho com sistemas de monitoramento, como Solar Winds, Zabbix, Grafana e Cacti. Fui responsável por configurar parâmetros essenciais, como SNMP, OID e ICMP, e por desenhar topologias para monitorar ativos de rede. Tenho habilidades sólidas em OSI/TCP IP, o que me permite identificar e solucionar incidentes de rede, aplicando soluções iniciais nas camadas física, de enlace e de rede. Na camada de enlace, possuo experiência em configurar e resolver problemas, incluindo loops de rede, gerenciamento de equipamentos com VLANs e configuração de MPLS. Tenho conhecimento em identificar interfaces, como SFP e QSFP, e em entender diferentes codificações ópticas, como multimode, singlemode, bidirecional e unidirecional. Além disso, sou capaz de analisar o sinal de equipamentos de fibra ou rádio. Tenho vivência em configurar e estruturar sistemas de telefonia fixa comutada, monitorando e analisando troncos de telefonia. Também configurei TDM e bundle para entrega de troncos de telefonia até um gateway. Na camada de rede, tenho experiência em DHCP, roteamento estático, OSPF, MPLS, PPPoE, NAT e firewall no Mikrotik e no Linux, utilizando IPtables. Além disso, possuo conhecimento em PABX Elastic e Isabel, o que adiciona mais habilidades ao meu perfil como analista de redes."}                
+                        />
                 </ul> 
                 <ul className="w-full flex flex-col items-start justify-between ml-4 mb-1" >
                     <Details 

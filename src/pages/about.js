@@ -70,26 +70,26 @@ const about = () => {
                     <div className='col-span-2 flex flex-col items-end justify-between' >
                         <div className='flex flex-col items-end justify-center' >
                             <span className='inline-block text-7xl font-bold'>
-                                <AnimatedNumbers value={50} />+
+                                <AnimatedNumbers value={3} />+
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75'>
-                                satisfied clients
+                                clientes satisfeitos
                             </h2>
                         </div>
                         <div className='flex flex-col items-end justify-center'>
                             <span className='inline-block text-7xl font-bold'>
-                            <AnimatedNumbers value={40} />+
+                                <AnimatedNumbers value={40} />+
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75' >
-                                projects completed
+                                projetos concluídos
                             </h2>
                         </div>
                         <div className='flex flex-col items-end justify-center'>
                             <span className='inline-block text-7xl font-bold'>
-                            <AnimatedNumbers value={4} />+
+                                <AnimatedNumbers value={13} />+
                             </span>
                             <h2 className='text-xl font-medium capitalize text-dark/75' >
-                                years of experience
+                                anos de experiência
                             </h2>
                         </div>
                     </div>
