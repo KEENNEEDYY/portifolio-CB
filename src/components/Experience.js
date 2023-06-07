@@ -13,18 +13,18 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
     const ref = useRef(null);
     return (
-        <li ref={ref} className='my-8 first:mt-0 last:mb-0 w-[70%] mx-auto flex flex-col items-left justify-between' >
+        <li ref={ref} className='!my-2 !first:mt-0 !last:mb-0 !w-[70%] !mx-auto !flex !flex-col !items-left !justify-between' >
             <LiIcon reference={ref} />
             <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}} >
-                <h3 className='capitalize font-bold text-2xl' >
+                <h3 className='!capitalize !font-bold !text-2xl' >
                     {position}&nbsp;<Link href={`${companyLink}`} 
                     target="_blank"
-                    className='text-primary capitalize'
+                    className='text-primary dark:text-primaryDark capitalize'
                     >
                         @{company}
                     </Link>
                 </h3>
-                <span className='capitalize font-medium text-dark/75' >
+                <span className='capitalize font-medium text-dark/75 dark:text-light/75' >
                     {time} | {address}
                 </span>
                     <p className='font-medium w-full hover:underline' onClick={handleClick} style={{ cursor: 'pointer'}}>
@@ -55,7 +55,9 @@ const Experience = () => {
         
         <div ref={ref} className="w-[75%] mx-auto relative">
 
-                <motion.div style={{scaleY: scrollYProgress }} className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top" /> 
+                <motion.div style={{scaleY: scrollYProgress }} 
+                    className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light" 
+                /> 
                 <ul className="w-full flex flex-col items-start justify-between ml-4 mb-1" >
                     <Details 
                             position={"Analista de Redes Pleno"}

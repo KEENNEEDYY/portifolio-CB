@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Desenvolvedor Kennedy | Home</title>
         <meta name="description" content="Desenvolvedor Kennedy" />
       </Head>
       <main className='flex items-center text-dark w-full min-h-screen dark:text-light'>
