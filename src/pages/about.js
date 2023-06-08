@@ -40,7 +40,8 @@ const about = () => {
             <title>Desenvolvedor Kennedy | About Page</title>
             <meta name="description" content="any description"/>
         </Head>
-        <main className="flex w-full flex-col items-center justify-center dark:text-light">
+        <main className="flex w-full flex-col items-center justify-center dark:text-light"
+        >
             <Layout className='pt-16'>
                 <AnimatedText text="A paixão é o que alimenta meu propósito!" className='mb-16 !text-5xl '/>
                 <div className='grid w-full grid-cols-8 gap-16'>
@@ -63,7 +64,10 @@ const about = () => {
                         </p>
                     </div>
                     <div className=' col-span-3 relative rounded-2xl border-2 border-solid border-dark 
-                        bg-light dark:bg-dark dark:border-light p-8' >
+                        bg-light dark:bg-dark 
+                        dark:border-light p-8
+                        ' 
+                    >
                         <div className=' absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light' />
                         <Image src={profilePic} alt='Kennedy' className='w-full h-auto rounded-2xl mt-[5%] dark:bg-dark ' 
                             priority 
