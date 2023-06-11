@@ -7,16 +7,23 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
     const [workText, setWorkText] = useState("Descrição [...]");
 
-    const handleClick = () => {
+    const descriptionClick = () => {
         workText===work ? setWorkText("Descrição [...]") : setWorkText(work);
     }
 
     const ref = useRef(null);
     return (
-        <li ref={ref} className='!my-2 !first:mt-0 !last:mb-0 !w-[70%] !mx-auto !flex !flex-col !items-left !justify-between' >
+        <li className='!my-2 !first:mt-0 !last:mb-0 !w-[70%] !mx-auto !flex !flex-col !items-left !justify-between
+            md:!w-[80%]
+            ' 
+            ref={ref}
+        >
             <LiIcon reference={ref} />
             <motion.div initial={{y:50}} whileInView={{y:0}} transition={{duration:0.5, type:"spring"}} >
-                <h3 className='!capitalize !font-bold !text-2xl' >
+                <h3 className='!capitalize !font-bold !text-2xl
+                    sm:text-xl xs:text-lg
+                ' 
+                >
                     {position}&nbsp;<Link href={`${companyLink}`} 
                     target="_blank"
                     className='text-primary dark:text-primaryDark capitalize'
@@ -24,10 +31,14 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
                         @{company}
                     </Link>
                 </h3>
-                <span className='capitalize font-medium text-dark/75 dark:text-light/75' >
+                <span className='capitalize font-medium text-dark/75 dark:text-light/75
+                    xs:text-sm 
+                ' 
+                >
                     {time} | {address}
                 </span>
-                    <p className='font-medium w-full hover:underline' onClick={handleClick} style={{ cursor: 'pointer'}}>
+                    <p className='font-medium w-full hover:underline md:text-sm' 
+                        onClick={descriptionClick} style={{ cursor: 'pointer'}}>
                         {workText}
                     </p> 
             </motion.div>
@@ -49,16 +60,24 @@ const Experience = () => {
   return (
     <motion.div className='my-64'>
 
-        <h2 className='font-bold text-8xl mb-32 w-full text-center' >
+        <h2 className='font-bold text-8xl mb-32 w-full text-center
+            md:text-6xl xs:text-4xl md:mb-16
+            ' 
+        >
             Experiência
         </h2>
         
-        <div ref={ref} className="w-[75%] mx-auto relative">
+        <div ref={ref} className="w-[75%] mx-auto relative first-letter:    
+            lg:w-[90%] md:w-full"
+        >
 
                 <motion.div style={{scaleY: scrollYProgress }} 
-                    className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light" 
+                    className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light
+                    md:w-[2px] md:left-[30px] xs:left-[20px]" 
                 /> 
-                <ul className="w-full flex flex-col items-start justify-between ml-4 mb-1" >
+                <ul className="w-full flex flex-col items-start justify-between ml-4 mb-1
+                    xs:ml-2" 
+                >
                     <Details 
                             position={"Analista de Redes Pleno"}
                             company={"VALENET"}
