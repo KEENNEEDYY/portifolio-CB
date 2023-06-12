@@ -7,6 +7,7 @@ import React from 'react';
 import Image from 'next/image';
 import { GithubIcon } from '@/components/Icons';
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
 
@@ -114,6 +115,7 @@ const projects = () => {
             <title>Kennedy Leocadio | Projects Page</title>
             <meta name="description" content="any description"/>
         </Head>
+        <TransitionEffect />
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light' >
             <Layout className='pt-16' >
                 <AnimatedText text={"Imagination Trumps Knowledge!"} 
