@@ -71,7 +71,7 @@ const Education = () => {
                         type={"Bacharel em Sistemas De Informação"}
                         time={"08/07/2022"}
                         place={"UNIVERSIDADE ESTÁCIO DE SÁ"}
-                        info={"Estruturas de Dados e Algoritmos, Engenharia de Sistemas de Computação e Inteligência Artificial"}
+                        info={"Estruturas de Dados e Algoritmos, Arquitetura de Sistemas e de Computação e Inteligência Artificial"}
                     />
                 </ul> 
                 <ul className="w-full flex flex-col items-start justify-between ml-4" >

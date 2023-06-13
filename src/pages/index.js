@@ -33,7 +33,7 @@ export default function Home() {
               />
               <p className='my-4 text-base font-medium lg:text-justify md:text-sm sm:text-xs' >
                 Como um desenvolvedor full-stack, dedico-me a transformar ideias em aplicações inovadoras.
-                Explore meus projetos e artigos mais recentes, mostrando minha experiência em React, SpringBoot e desenvolvimento de sistemas.
+                Explore meus projetos mais recentes, mostrando minha experiência em React, SpringBoot e desenvolvimento de sistemas.
               </p>
               <div className='flex items-center self-start mt-2 lg:self-center'>
                 <Link href="/dummy.pdf" target={"_blank"} className="flex items-center bg-dark text-light p-2.5 px-6 
