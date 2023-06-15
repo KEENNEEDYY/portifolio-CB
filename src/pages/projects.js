@@ -6,12 +6,15 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import { GithubIcon } from '@/components/Icons';
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import projectImg from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import dscatalogImg from "../../public/images/projects/dscatalog_img.png";
+import dsvendasImg from "../../public/images/projects/dsvendas_img.png";
+import dsmovieImg from "public/images/projects/dsmovie_img.png";
 import TransitionEffect from '@/components/TransitionEffect';
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({type, title, summary, img, link, github}) => {
+const ExpandedProject = ({type, title, summary, img, link, github}) => {
     return (
         <article className='w-full flex items-center justify-between relative rounded-br-2xl
             rounded-3xl border border-solid 
@@ -118,69 +121,43 @@ const projects = () => {
         <TransitionEffect />
         <main className='w-full mb-16 flex flex-col items-center justify-center dark:text-light' >
             <Layout className='pt-16' >
-                <AnimatedText text={"Imagination Trumps Knowledge!"} 
+                <AnimatedText text={"Projetos fullstack usando Java e TypeScript"} 
                     className='text-5xl mb-16 sm:mb-8 sm!text-6xl xs:!text-4xl'
                 />
 
                 <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0' >
                     <div className='col-span-12' >
-                        <FeaturedProject 
-                            title="Crypto Screener Application"
-                            img={project1}
-                            summary="This is a project to help you management a cryptocurrency screener."
-                            link="https://portifolio.desenvolvedor-kennedy.com.br/"
-                            github="https://github.com/kennedy-leocadio/crypto-screener"
-                            type="Feacture Project"
-                        />
-                    </div>
-                    <div className='col-span-6 sm:col-span-12' >
-                        <Project 
-                            title="Crypto Screener Application"
-                            img={project1}
-                            summary="This is a project to help you management a cryptocurrency screener."
-                            link="https://portifolio.desenvolvedor-kennedy.com.br/"
-                            github="https://github.com/kennedy-leocadio/crypto-screener"
-                            type="Project"
-                        />
-                    </div>
-                    <div className='col-span-6 sm:col-span-12' >
-                        <Project 
-                            title="Crypto Screener Application"
-                            img={project1}
-                            summary="This is a project to help you management a cryptocurrency screener."
-                            link="https://portifolio.desenvolvedor-kennedy.com.br/"
-                            github="https://github.com/kennedy-leocadio/crypto-screener"
-                            type="Project"
+                        <ExpandedProject 
+                            title="DS Catalog"
+                            img={dscatalogImg}
+                            summary="Este é um projeto de catálogo de produtos, onde o frontend faz interações com o backend 
+                                que possui autenticação e autorização que também foi desenvolvido por mim. Mais detalhes no github."
+                            link="https://dscatalog-kennedy.netlify.app"
+                            github="https://github.com/KEENNEEDYY/dscatalog-homolog"
+                            type="TypeScript, React, SpringBoot e Java"
                         />
                     </div>
                     <div className='col-span-12' >
-                        <FeaturedProject 
-                            title="Crypto Screener Application"
-                            img={project1}
-                            summary="This is a project to help you management a cryptocurrency screener."
-                            link="https://portifolio.desenvolvedor-kennedy.com.br/"
-                            github="https://github.com/kennedy-leocadio/crypto-screener"
-                            type="Feacture Project"
+                        <ExpandedProject 
+                            title="DS Vendas"
+                            img={dsvendasImg}
+                            summary="Este é um Dashboard de vendas, onde é listado as vendas por vendedor e também é mostrado 
+                                dois gráficos diferentes um de pizza e outro de barras usando informações de um sistema backend 
+                                também desenvolvido por mim. Foi usado a biblioteca axios para plotagem dos gráficos."
+                            link="https://dsvendas-keenneedyy.netlify.app"
+                            github="https://github.com/KEENNEEDYY/projeto-sds"
+                            type="TypeScript, React, SpringBoot e Java"
                         />
                     </div>
-                    <div className='col-span-6 sm:col-span-12' >
-                        <Project 
-                            title="Crypto Screener Application"
-                            img={project1}
-                            summary="This is a project to help you management a cryptocurrency screener."
-                            link="https://portifolio.desenvolvedor-kennedy.com.br/"
-                            github="https://github.com/kennedy-leocadio/crypto-screener"
-                            type="Project"
-                        />
-                    </div>
-                    <div className='col-span-6 sm:col-span-12' >
-                        <Project 
-                            title="Crypto Screener Application"
-                            img={project1}
-                            summary="This is a project to help you management a cryptocurrency screener."
-                            link="https://portifolio.desenvolvedor-kennedy.com.br/"
-                            github="https://github.com/kennedy-leocadio/crypto-screener"
-                            type="Project"
+                    <div className='col-span-12' >
+                        <ExpandedProject 
+                            title="DS Movie"
+                            img={dsmovieImg}
+                            summary="Este é um projeto onde é possível votar no seu filme predileto 
+                                que a partir disso o sistema faz uma média geral por email da classificação do filme."
+                            link="https://kennedy-dsmovie.netlify.app"
+                            github="https://github.com/KEENNEEDYY/dsmovie"
+                            type="TypeScript, React, SpringBoot e Java"
                         />
                     </div>
                 </div>

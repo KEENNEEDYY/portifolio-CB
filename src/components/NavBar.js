@@ -79,7 +79,7 @@ const NavBar = () => {
             <CustomLink href="/" title={"Inicio"} className='mr-4'/>
             <CustomLink href="/about" title={"Sobre"} className='mx-4'/>
             <CustomLink href="/projects" title={"Projetos"} className='mx-4'/>
-            <CustomLink href="/articles" title={"Artigos"} className='ml-4' />
+            <CustomLink href="/articles" title={"Artigos"} className='ml-4 hidden' />
         </nav>
       
           
@@ -134,7 +134,7 @@ const NavBar = () => {
               <CustomMobileLink href="/" title={"Inicio"} className='' toggle={handleClick}/>
               <CustomMobileLink href="/about" title={"Sobre"} className='' toggle={handleClick}/>
               <CustomMobileLink href="/projects" title={"Projetos"} className='' toggle={handleClick}/>
-              <CustomMobileLink href="/articles" title={"Artigos"} className='' toggle={handleClick}/>
+              <CustomMobileLink href="/articles" title={"Artigos"} className='hidden' toggle={handleClick}/>
           </nav>
 
             
