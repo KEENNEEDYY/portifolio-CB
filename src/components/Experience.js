@@ -24,9 +24,11 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
                     sm:text-xl xs:text-lg
                 ' 
                 >
-                    {position}&nbsp;<Link href={`${companyLink}`} 
-                    target="_blank"
-                    className='text-primary dark:text-primaryDark capitalize'
+                    {position}&nbsp;
+                    <Link 
+                        href={`http://${companyLink}`} 
+                        target="_blank"
+                        className='text-primary dark:text-primaryDark capitalize'
                     >
                         @{company}
                     </Link>
