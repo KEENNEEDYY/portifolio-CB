@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Desenvolvedor Kennedy | Home</title>
+        <title>D.Kennedy | Home</title>
         <meta name="description" content="Desenvolvedor Kennedy" />
       </Head>
       <TransitionEffect />

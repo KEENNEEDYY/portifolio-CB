@@ -38,7 +38,7 @@ const about = () => {
   return (
     <>
         <Head>
-            <title>Desenvolvedor Kennedy | About Page</title>
+            <title>D.Kennedy | About Page</title>
             <meta name="description" content="any description"/>
         </Head>
         <TransitionEffect />
