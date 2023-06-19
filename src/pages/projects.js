@@ -6,7 +6,6 @@ import Link from 'next/link';
 import React from 'react';
 import Image from 'next/image';
 import { GithubIcon } from '@/components/Icons';
-import projectImg from "../../public/images/projects/crypto-screener-cover-image.jpg";
 import dscatalogImg from "../../public/images/projects/dscatalog_img.png";
 import dsvendasImg from "../../public/images/projects/dsvendas_img.png";
 import dsmovieImg from "public/images/projects/dsmovie_img.png";
@@ -115,7 +114,7 @@ const projects = () => {
   return (
     <>
         <Head>
-            <title>Kennedy Leocadio | Projects Page</title>
+            <title>Desenvolvedor Kennedy | Projects Page</title>
             <meta name="description" content="any description"/>
         </Head>
         <TransitionEffect />
