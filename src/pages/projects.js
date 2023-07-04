@@ -132,7 +132,7 @@ const projects = () => {
                             summary="Este é um projeto de catálogo de produtos, onde o frontend faz interações com o backend 
                                 que possui autenticação e autorização que também foi desenvolvido por mim. Mais detalhes no github."
                             link="https://dscatalog-kennedy.netlify.app"
-                            github="https://github.com/KEENNEEDYY/dscatalog-homolog"
+                            github="https://github.com/KEENNEEDYY/dscatalog-ecomerce/"
                             type="TypeScript, React, SpringBoot e Java"
                         />
                     </div>
