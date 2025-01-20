@@ -84,14 +84,6 @@ const Education = () => {
                 </ul> 
                 <ul className="w-full flex flex-col items-start justify-between ml-4" >
                     <Details 
-                        type={"Técnico em redes de computadores"}
-                        time={"31/12/2019"}
-                        place={"SENAC"}
-                        info={"Configuração e instalação de redes LAN, MAN, WAN. Modelo OSI, DHCP, VLAN e tecnologias de roteamento"}
-                    />
-                </ul> 
-                <ul className="w-full flex flex-col items-start justify-between ml-4" >
-                    <Details 
                         type={"Engenharia de Computação"}
                         time={"30/02/2017"}
                         place={"Universidade Federal de Ouro Preto"}
